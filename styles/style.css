@@ -76,10 +76,10 @@ nav ul li>a:hover{
     font-weight: 600;
 }
 .hi{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
 .banner-description{
     font-weight: 400;
     color: #4A4545;
@@ -99,6 +99,7 @@ nav ul li>a:hover{
     background: #FFF;
     box-shadow: 0px 8px 80px 0px rgba(103, 95, 95, 0.04), 0px 3.342px 33.422px 0px rgba(103, 95, 95, 0.03), 0px 1.787px 17.869px 0px rgba(103, 95, 95, 0.02), 0px 1.002px 10.017px 0px rgba(103, 95, 95, 0.02), 0px 0.532px 5.32px 0px rgba(103, 95, 95, 0.02), 0px 0.221px 2.214px 0px rgba(103, 95, 95, 0.01);
     border: none;
+    outline-color: #5669FF;
  }
  input::placeholder{
     padding-left: 10px;
@@ -125,9 +126,110 @@ nav ul li>a:hover{
 
 /* header section end  */
 
+/* main section start  */
+main{
+
+}
+
+/* whats-bantu section start */
+.whats-bantu{
+    margin: 25px 0;
+}
+.section-top{
+    
+    text-align: center;
+}
+.whats-title{
+  font-size: 3.25rem;
+  font-weight: 600;
+  margin-bottom:20px ;
+}
+.whats-description{
+  max-width: 543px;
+  margin: 0 auto;
+}
+.whats-bantu-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin: 6rem ;
+}
+.whats-content{
+   max-width: 382px;
+   height: 244px;
+   text-align: center;
+   border-radius: 10px;
+   background: #FFF;
+   box-shadow: 0px 21px 195px 0px rgba(118, 111, 111, 0.09), 0px 4.691px 43.556px 0px rgba(118, 111, 111, 0.05), 0px 1.397px 12.968px 0px rgba(118, 111, 111, 0.04);
+   padding: 20px;
+   align-content: center;
+   transition: transform .6s ;
+}
+.whats-content:hover{
+    transform: scale(1.1);
+}
+.whats-content-title{
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.whats-content-description{
+    color: #4A4545;
+}
+.whats-button{
+    text-align: center;
+}
+/* whats-bantu section end */
+/* get the app section start  */
+.get-app-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+}
+.get-app-content-1{
+   width: 50%;
+}
+.get-app-content-1 img{
+      width: 100%;
+}
+.get-app-content-2{
+      max-width:543px ;
+}
+.download{
+      color: #5669FF;
+      font-weight: 600;
+
+}
+.border{
+    border: 2px solid #5669FF;
+    margin-right: 15px;
+}
+.get-app-title{
+      font-size: 3.25rem;
+      font-weight: 600;
+}  
+.get-app-description{
+    color: #4A4545;
+    margin: 30px 0;
+}
+.get-app-img{
+    display: flex;
+    align-items: center;
+
+}
+.get-app-img img{
+    width: 70%;
+}
+/* get the app section end */
+
+
+/* main section end  */
+
 /* responsive for small device  */
 @media screen  and (max-width:576px){
-    nav{
+    nav,.get-app-container{
         flex-direction: column;
         gap: 1.8rem;
         height: auto;
@@ -141,11 +243,17 @@ nav ul li>a:hover{
     .banner-content-2 {
         width: 100%;
     }
+    .whats-bantu-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .get-app-content-1{
+        width: 90%;
+    }
 }
 /* responsive for  medium device  */
 
 @media screen  and (min-width:577px ) and (max-width:992px){
-    nav{
+    nav,.get-app-container{
         flex-direction: column;
         height: auto;
         gap: 1.8rem;
@@ -161,5 +269,11 @@ nav ul li>a:hover{
     }
     .banner-content-2 {
         width: 100%;
+    }
+    .whats-bantu-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .get-app-content-1{
+        width: 75%;
     }
 }
