@@ -324,6 +324,10 @@ main{
     .whats-bantu-container{
         grid-template-columns: repeat(2,1fr);
     }
+    .whats-content{
+        height: 100%;
+        
+    }
     .get-app-content-1,.covid-content-2{
         width: 75%;
     }
